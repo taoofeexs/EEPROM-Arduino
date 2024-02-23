@@ -1,0 +1,15 @@
+#include <EEPROM.h>
+
+int address = 0;  // Lokasi awal di EEPROM
+
+void setup() {
+    // Setup kode
+}
+
+void loop() {
+    int dataToStore = 42;  // Data yang ingin disimpan
+
+    EEPROM.write(address, dataToStore);
+
+    // Tambahkan delay atau kode lain sesuai kebutuhan Anda
+}
